@@ -4,20 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.xiaodong.spark</groupId>
-    <artifactId>xiaodong-spark</artifactId>
+    <groupId>spark</groupId>
+    <artifactId>spark</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <modules>
-        <module>easy-scala</module>
-        <module>spark-examples</module>
-        <module>easy-spark</module>
-    </modules>
     <properties>
         <scala.binary.version>2.11</scala.binary.version>
         <scala.version>2.11.8</scala.version>
-        <spark.version>2.2.0</spark.version>
+        <spark.version>2.1.0</spark.version>
     </properties>
 
     <dependencies>
@@ -34,6 +29,11 @@
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-streaming_${scala.binary.version}</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>spark-streaming-kafka-0-10_${scala.binary.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
