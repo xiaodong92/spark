@@ -1,4 +1,4 @@
-package com.study.spark
+package com.study.spark.sql.streaming
 
 import org.apache.spark.sql.SparkSession
 

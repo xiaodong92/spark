@@ -1,6 +1,6 @@
-package com.study.spark
+package com.study.spark.sql.streaming
 
-import org.apache.spark.sql.{DataFrame, SparkSession, Dataset}
+import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
 
 object WordCountExample {
 

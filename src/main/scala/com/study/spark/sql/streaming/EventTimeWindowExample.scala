@@ -1,10 +1,10 @@
-package com.study.spark
+package com.study.spark.sql.streaming
 
 import java.sql.Timestamp
 
 import org.apache.commons.lang3.time.FastDateFormat
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.functions._
+import org.apache.spark.sql.functions.window
 
 object EventTimeWindowExample {
 
